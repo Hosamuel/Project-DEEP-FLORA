@@ -7,7 +7,7 @@ O projeto utiliza conjuntos de dados públicos, extenso e diversificado, combina
 ## Desenvolvimento do Projeto
 O projeto está em aberto, mas em fase de finalização. Os resultados obtidos até o momento indicam uma evolução significativa a cada nova atualização.
 
-Duas redes neurais promissoras foram testadas, com desempenho satisfatório. O processo de análise comparativa e escolha do modelo final foi conduzido em um Jupyter Notebook principal — disponível em main.ipynb. Esse notebook inclui:
+Duas redes neurais promissoras foram testadas, com desempenho satisfatório. O processo de análise comparativa e escolha do modelo final foi conduzido em um Jupyter Notebook principal — disponível em [main.ipynb](main.ipynb). Esse notebook inclui:
 
 - Bibliotecas utilizadas para o desenvolvimento
 - Análise quantitativa dos dados adquiridos
