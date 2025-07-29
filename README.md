@@ -8,33 +8,33 @@ A motivação do projeto surge do desafio recorrente na identificação de espé
 O pipeline completo foi desenvolvido em Python e estruturado para garantir reprodutibilidade e desempenho. As principais etapas são:
 
 ### Coleta e curadoria de dados
-Coleta automatizada via API (GBIF) e download de Pl@ntNet-300K.
-Filtro por imagens do tipo stillimage e resolução mínima de 720×720 pixels.
-Exclusão de imagens corrompidas, duplicadas e de herbário.
-Curadoria final resultou em 540.353 imagens de 487 espécies.
+- Coleta automatizada via API (GBIF) e download de Pl@ntNet-300K.
+- Filtro por imagens do tipo stillimage e resolução mínima de 720×720 pixels.
+- Exclusão de imagens corrompidas, duplicadas e de herbário.
+- Curadoria final resultou em 540.353 imagens de 487 espécies.
 
 ### Pré-processamento
-Conversão para RGB e redimensionamento.
-Normalização conforme as exigências das arquiteturas (ImageNet).
-Divisão em treino (70%), validação (15%) e teste (15%) com script personalizado.
+- Conversão para RGB e redimensionamento.
+- Normalização conforme as exigências das arquiteturas (ImageNet).
+- Divisão em treino (70%), validação (15%) e teste (15%) com script personalizado.
 
 ### Data augmentation
-Aplicado apenas ao conjunto de treino com:
-Rotação até 30º
-Flip horizontal e vertical
-Cisalhamento (affine shear)
-Ajustes de brilho e contraste
+- Aplicado apenas ao conjunto de treino com:
+- Rotação até 30º
+- Flip horizontal e vertical
+- Cisalhamento (affine shear)
+- Ajustes de brilho e contraste
 
 ### Modelos utilizados
-ResNet-50 e EfficientNet-B3 com pesos do ImageNet.
-Cabeçalho adaptado para 487 classes.
-Congelamento inicial do backbone por 3 épocas, seguido de fine-tuning.
-Treinamento com:
-batch_size = 32
-learning_rate = 0.0001
-epochs = 9 a 10
-Otimizador Adam
-Scheduler StepLR (step_size=5, gamma=0.1)
+- ResNet-50 e EfficientNet-B3 com pesos do ImageNet.
+- Cabeçalho adaptado para 487 classes.
+- Congelamento inicial do backbone por 3 épocas, seguido de fine-tuning.
+- Treinamento com:
+  - batch_size = 32
+  - learning_rate = 0.0001
+  - epochs = 9 a 10
+  - Otimizador Adam
+  - Scheduler StepLR (step_size=5, gamma=0.1)
 
 ### Infraestrutura
 Sistema: Windows 11 + CUDA 11.8
