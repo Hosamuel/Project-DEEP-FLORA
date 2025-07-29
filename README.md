@@ -8,21 +8,21 @@ A motivação do projeto surge do desafio recorrente na identificação de espé
 O pipeline completo foi desenvolvido em Python e estruturado para garantir reprodutibilidade e desempenho. As principais etapas são:
 
 ### Coleta e curadoria de dados
-- Coleta automatizada via API (GBIF) e download de Pl@ntNet-300K.
-- Filtro por imagens do tipo stillimage e resolução mínima de 720×720 pixels.
+- Coleta automatizada via API (GBIF) e download do dataset Pl@ntNet-300K.
+- Filtro por imagens do tipo stillimage e resolução mínima de 720×720 pixels, para a API.
 - Exclusão de imagens corrompidas, duplicadas e de herbário.
 - Curadoria final resultou em 540.353 imagens de 487 espécies.
 
 ### Pré-processamento
 - Conversão para RGB e redimensionamento.
 - Normalização conforme as exigências das arquiteturas (ImageNet).
-- Divisão em treino (70%), validação (15%) e teste (15%) com script personalizado.
+- Divisão em treino (70%), validação (15%) e teste (15%).
 
 ### Data augmentation
 - Aplicado apenas ao conjunto de treino com:
 - Rotação até 30º
 - Flip horizontal e vertical
-- Cisalhamento (affine shear)
+- Cisalhamento
 - Ajustes de brilho e contraste
 
 ### Modelos utilizados
@@ -32,7 +32,7 @@ O pipeline completo foi desenvolvido em Python e estruturado para garantir repro
 - Treinamento com:
   - batch_size = 32
   - learning_rate = 0.0001
-  - epochs = 9 a 10
+  - epochs = 9 para o modelo EfficientNet-B3 e 10 para o modelo ResNet-50.
   - Otimizador Adam
   - Scheduler StepLR (step_size=5, gamma=0.1)
 
@@ -43,7 +43,7 @@ O pipeline completo foi desenvolvido em Python e estruturado para garantir repro
 
 # Reultados 
 Após os testes com ambos os modelos, os seguintes resultados foram obtidos:
-<img width="736" height="93" alt="image" src="https://github.com/user-attachments/assets/c4d3976f-5cc8-433f-b03d-f19f21660fad" />
+  <img width="736" height="93" alt="image" src="https://github.com/user-attachments/assets/c4d3976f-5cc8-433f-b03d-f19f21660fad" />
 
 # Referências
 Baumbach, L., Schmidt, C., & Michalik, A. (2019). Big data and citizen science—An integration towards data-driven sustainable development. Sustainability, 11(4), 956. https://doi.org/10.3390/su11040956.
