@@ -42,7 +42,7 @@ O pipeline completo foi desenvolvido em Python e estruturado para garantir repro
 - Bibliotecas principais: PyTorch, torchvision, scikit-learn, pandas, pillow, opencv, Flask
 
 # Resultados 
-Todos os resultados gerados ao longo do experimento foram organizados em arquivos tabulares, permitindo a verificação detalhada das métricas e análises de desempenho. Esses arquivos estão disponíveis na pasta [results](results) e parte das análises também pode ser visualizada diretamente no Jupyter Notebook principal, disponível em notebooks/main.ipynb.
+Todos os resultados gerados ao longo do experimento foram organizados em arquivos tabulares, permitindo a verificação detalhada das métricas e análises de desempenho. Esses arquivos estão disponíveis na pasta [results](results) e parte das análises também pode ser visualizada diretamente no Jupyter Notebook principal, disponível em [analise_results_resnet50.ipynb](analise_results_resnet50.ipynb).
 
 Após os testes com ambos os modelos — ResNet-50 e EfficientNet-B3 — os seguintes resultados globais foram obtidos:
 <p align="center"> <img width="736" height="93" alt="Resultados ResNet vs EfficientNet" src="https://github.com/user-attachments/assets/c4d3976f-5cc8-433f-b03d-f19f21660fad" /> </p>
