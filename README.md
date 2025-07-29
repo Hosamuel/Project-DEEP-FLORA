@@ -3,6 +3,8 @@
 Deep-Flora é um sistema simples e de fácil acesso projetado para reconhecer automaticamente uma ampla variedade de espécies de plantas a partir de imagens. A proposta é contribuir com áreas como botânica, agricultura e estudos ambientais, oferecendo uma ferramenta acessível para identificação precisa de espécies.
 
 O projeto utiliza conjuntos de dados públicos, extenso e diversificado, combinando imagens de diferentes fontes. Por meio de técnicas de Deep Learning e Transfer Learning, o sistema foi treinado com uma arquitetura moderna de redes neurais convolucionais, visando alto desempenho mesmo diante da variabilidade visual entre as espécies.
+## Indice
+***Desenvolvimento do Projeto***
 
 ## Desenvolvimento do Projeto
 O projeto está em aberto, mas em fase de finalização. Os resultados obtidos até o momento indicam uma evolução significativa a cada nova atualização.
@@ -15,18 +17,14 @@ Duas redes neurais promissoras foram testadas, com desempenho satisfatório. O p
 - Definição da arquitetura final adotada para o projeto
 
 # Dataset
-O conjunto de dados é composto por milhares de imagens de plantas, organizadas em três subconjuntos:
+O conjunto de dados é composto por milhares de imagens de plantas, organizadas em três subconjuntos, sendo separados em:
 
-Treinamento: Imagens usadas para treinar o modelo de classificação.
-Validação: Imagens para ajuste de hiperparâmetros.
-Teste: Imagens para avaliação final no desempenho do modelo.
+Treinamento: Imagens usadas para treinar o modelo de classificação que somam 70% dos dados.
+Validação: Imagens para ajuste de hiperparâmetros que somam 15% do conjunto.
+Teste: Imagens para avaliação final no desempenho do modelo que somam os 15% restantes.
 
 ## Modelo Utilizado
-Para construir o modelo de classificação, foi utilizada a técnica de Transfer Learning com base em uma arquitetura pré-treinada, permitindo uma melhor performance mesmo com menos dados e menos tempo de treinamento. A arquitetura escolhida foi:
 
-Arquitetura Base: ResNet50 e o modelo gerado foi: model.pth.
-Pesos Pré-Treinados: weights.pth.
-Os pesos do modelo foram ajustados para identificar espécies de plantas, adaptando as camadas finais para a classificação específica das classes do conjunto de dados.
 
 ## Referências
 Baumbach, L., Schmidt, C., & Michalik, A. (2019). Big data and citizen science—An integration towards data-driven sustainable development. Sustainability, 11(4), 956. https://doi.org/10.3390/su11040956.
@@ -34,6 +32,8 @@ Baumbach, L., Schmidt, C., & Michalik, A. (2019). Big data and citizen science�
 BFG – The Brazil Flora Group. (2018). Brazilian Flora 2020: Innovation and collaboration to meet Target 1 of the Global Strategy for Plant Conservation. Rodriguésia, 69(4), 1513–1527. https://doi.org/10.1590/2175-7860201869402.
 
 Chen, Y., Huang, Y., Zhang, Z., Wang, Z., Liu, B., Liu, C., Huang, C., Dong, S., Pu, X., Wan, F., Qiao, X., & Qian, W. (2023). Plant image recognition with Deep Learning: A review. Computers and Electronics in Agriculture, 212, 108072. https://doi.org/10.1016/j.compag.2023.108072.
+
+Garcin, C., Joly, A., Bonnet, P., Servajean, M., & Salmon, J. (2021). Pl@ntNet-300K image dataset (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.4726653.
 
 Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.
 
