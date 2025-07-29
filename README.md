@@ -42,8 +42,12 @@ O pipeline completo foi desenvolvido em Python e estruturado para garantir repro
 - Bibliotecas principais: PyTorch, torchvision, scikit-learn, pandas, pillow, opencv, Flask
 
 # Resultados 
-Após os testes com ambos os modelos, os seguintes resultados foram obtidos:
-- <img width="736" height="93" alt="image" src="https://github.com/user-attachments/assets/c4d3976f-5cc8-433f-b03d-f19f21660fad" />
+Todos os resultados gerados ao longo do experimento foram organizados em arquivos tabulares, permitindo a verificação detalhada das métricas e análises de desempenho. Esses arquivos estão disponíveis na pasta results/ e parte das análises também pode ser visualizada diretamente no Jupyter Notebook principal, disponível em notebooks/main.ipynb.
+
+Após os testes com ambos os modelos — ResNet-50 e EfficientNet-B3 — os seguintes resultados globais foram obtidos:
+<p align="center"> <img width="736" height="93" alt="Resultados ResNet vs EfficientNet" src="https://github.com/user-attachments/assets/c4d3976f-5cc8-433f-b03d-f19f21660fad" /> </p>
+
+Embora a EfficientNet-B3 tenha gerado um modelo consideravelmente mais leve em termos de armazenamento, a ResNet-50 apresentou desempenho superior nas principais métricas de classificação, como acurácia, f1-score macro e recall ponderado, sendo, portanto, a arquitetura selecionada para integrar a versão final do sistema.
 
 # Referências
 Baumbach, L., Schmidt, C., & Michalik, A. (2019). Big data and citizen science—An integration towards data-driven sustainable development. Sustainability, 11(4), 956. https://doi.org/10.3390/su11040956.
