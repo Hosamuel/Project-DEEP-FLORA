@@ -6,7 +6,7 @@ O projeto utiliza conjuntos de dados públicos, extenso e diversificado, combina
 # Indice
 **1. Desenvolvimento do Projeto**
 
-## Desenvolvimento do Projeto
+# Desenvolvimento do Projeto
 O projeto está em aberto, mas em fase de finalização. Os resultados obtidos até o momento indicam uma evolução significativa a cada nova atualização.
 
 Duas redes neurais promissoras foram testadas, com desempenho satisfatório. O processo de análise comparativa e escolha do modelo final foi conduzido em um Jupyter Notebook principal — disponível em [main.ipynb](main.ipynb). 
@@ -25,7 +25,7 @@ Validação: Imagens para ajuste de hiperparâmetros que somam 15% do conjunto.
 Teste: Imagens para avaliação final no desempenho do modelo que somam os 15% restantes.
 
 ## Modelo Utilizado
-
+Como descrito no 
 
 ## Referências
 Baumbach, L., Schmidt, C., & Michalik, A. (2019). Big data and citizen science—An integration towards data-driven sustainable development. Sustainability, 11(4), 956. https://doi.org/10.3390/su11040956.
