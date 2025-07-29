@@ -37,8 +37,8 @@ O pipeline completo foi desenvolvido em Python e estruturado para garantir repro
   - Scheduler StepLR (step_size=5, gamma=0.1)
 
 ### Infraestrutura
-Sistema: Windows 11 + CUDA 11.8
-GPU: NVIDIA GTX 1650 (4 GB)
+- Sistema: Windows 11 + CUDA 11.8
+- GPU: NVIDIA GTX 1650 (4 GB)
 
 Bibliotecas principais: PyTorch, torchvision, scikit-learn, pandas, pillow, opencv, Flask
 # Desenvolvimento do Projeto
