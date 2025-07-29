@@ -49,7 +49,7 @@ Após os testes com ambos os modelos — ResNet-50 e EfficientNet-B3 — os segu
 
 Embora a EfficientNet-B3 tenha gerado um modelo consideravelmente mais leve em termos de armazenamento, a ResNet-50 apresentou desempenho superior nas principais métricas de classificação, como acurácia, f1-score macro e recall ponderado, sendo, portanto, a arquitetura selecionada para integrar a versão final do sistema.
 
-O código-fonte completo do projeto está disponível em P[lants-Image-Classification](https://github.com/Hosamuel/classifique-render.git) e pode ser executado localmente para fins de reprodução e testes.
+O código-fonte completo do projeto está disponível em https://github.com/Hosamuel/classifique-render.git e pode ser executado localmente para fins de reprodução e testes.
 
 # Referências
 Baumbach, L., Schmidt, C., & Michalik, A. (2019). Big data and citizen science—An integration towards data-driven sustainable development. Sustainability, 11(4), 956. https://doi.org/10.3390/su11040956.
