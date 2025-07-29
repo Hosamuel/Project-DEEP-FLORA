@@ -39,30 +39,13 @@ O pipeline completo foi desenvolvido em Python e estruturado para garantir repro
 ### Infraestrutura
 - Sistema: Windows 11 + CUDA 11.8
 - GPU: NVIDIA GTX 1650 (4 GB)
+- Bibliotecas principais: PyTorch, torchvision, scikit-learn, pandas, pillow, opencv, Flask
 
-Bibliotecas principais: PyTorch, torchvision, scikit-learn, pandas, pillow, opencv, Flask
-# Desenvolvimento do Projeto
-O projeto está em aberto, mas em fase de finalização. Os resultados obtidos até o momento indicam uma evolução significativa a cada nova atualização.
+# Reultados 
+Após os testes com ambos os modelos, os seguintes resultados foram obtidos:
+<img width="736" height="93" alt="image" src="https://github.com/user-attachments/assets/c4d3976f-5cc8-433f-b03d-f19f21660fad" />
 
-Duas redes neurais promissoras foram testadas, com desempenho satisfatório. O processo de análise comparativa e escolha do modelo final foi conduzido em um Jupyter Notebook principal — disponível em [main.ipynb](main.ipynb). 
-
-Esse notebook inclui:
-- Bibliotecas utilizadas para o desenvolvimento
-- Análise quantitativa dos dados adquiridos
-- Avaliação de desempenho dos modelos testados
-- Definição da arquitetura final adotada para o projeto
-
-# Dataset
-O conjunto de dados é composto por milhares de imagens de plantas, organizadas em três subconjuntos, sendo separados em:
-
-Treinamento: Imagens usadas para treinar o modelo de classificação que somam 70% dos dados.
-Validação: Imagens para ajuste de hiperparâmetros que somam 15% do conjunto.
-Teste: Imagens para avaliação final no desempenho do modelo que somam os 15% restantes.
-
-## Modelo Utilizado
-Como descrito no 
-
-## Referências
+# Referências
 Baumbach, L., Schmidt, C., & Michalik, A. (2019). Big data and citizen science—An integration towards data-driven sustainable development. Sustainability, 11(4), 956. https://doi.org/10.3390/su11040956.
 
 BFG – The Brazil Flora Group. (2018). Brazilian Flora 2020: Innovation and collaboration to meet Target 1 of the Global Strategy for Plant Conservation. Rodriguésia, 69(4), 1513–1527. https://doi.org/10.1590/2175-7860201869402.
