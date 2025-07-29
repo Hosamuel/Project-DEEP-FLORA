@@ -2,8 +2,45 @@
 
 Deep-Flora é um sistema simples e de fácil acesso projetado para reconhecer automaticamente uma ampla variedade de espécies de plantas a partir de imagens. A proposta é contribuir com áreas como botânica, agricultura e estudos ambientais, oferecendo uma ferramenta acessível para identificação precisa de espécies.
 
-O projeto utiliza conjuntos de dados públicos, extenso e diversificado, combinando imagens de diferentes fontes. Por meio de técnicas de Deep Learning e Transfer Learning, o sistema foi treinado com uma arquitetura moderna de redes neurais convolucionais, visando alto desempenho mesmo diante da variabilidade visual entre as espécies.
+A motivação do projeto surge do desafio recorrente na identificação de espécies, dada a vasta biodiversidade e a semelhança morfológica entre muitas plantas. A proposta do Deep-Flora é democratizar o acesso a esse tipo de conhecimento utilizando redes neurais convolucionais (CNNs), aprendizado profundo (Deep Learning) e transferência de aprendizado (Transfer Learning), treinadas com grandes bases públicas de dados, como Pl@ntNet-300K e GBIF.
 
+# Metodologia
+O pipeline completo foi desenvolvido em Python e estruturado para garantir reprodutibilidade e desempenho. As principais etapas são:
+
+### Coleta e curadoria de dados
+Coleta automatizada via API (GBIF) e download de Pl@ntNet-300K.
+Filtro por imagens do tipo stillimage e resolução mínima de 720×720 pixels.
+Exclusão de imagens corrompidas, duplicadas e de herbário.
+Curadoria final resultou em 540.353 imagens de 487 espécies.
+
+### Pré-processamento
+Conversão para RGB e redimensionamento.
+Normalização conforme as exigências das arquiteturas (ImageNet).
+Divisão em treino (70%), validação (15%) e teste (15%) com script personalizado.
+
+### Data augmentation
+Aplicado apenas ao conjunto de treino com:
+Rotação até 30º
+Flip horizontal e vertical
+Cisalhamento (affine shear)
+Ajustes de brilho e contraste
+
+### Modelos utilizados
+ResNet-50 e EfficientNet-B3 com pesos do ImageNet.
+Cabeçalho adaptado para 487 classes.
+Congelamento inicial do backbone por 3 épocas, seguido de fine-tuning.
+Treinamento com:
+batch_size = 32
+learning_rate = 0.0001
+epochs = 9 a 10
+Otimizador Adam
+Scheduler StepLR (step_size=5, gamma=0.1)
+
+### Infraestrutura
+Sistema: Windows 11 + CUDA 11.8
+GPU: NVIDIA GTX 1650 (4 GB)
+
+Bibliotecas principais: PyTorch, torchvision, scikit-learn, pandas, pillow, opencv, Flask
 # Desenvolvimento do Projeto
 O projeto está em aberto, mas em fase de finalização. Os resultados obtidos até o momento indicam uma evolução significativa a cada nova atualização.
 
