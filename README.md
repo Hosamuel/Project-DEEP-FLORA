@@ -41,9 +41,9 @@ O pipeline completo foi desenvolvido em Python e estruturado para garantir repro
 - GPU: NVIDIA GTX 1650 (4 GB)
 - Bibliotecas principais: PyTorch, torchvision, scikit-learn, pandas, pillow, opencv, Flask
 
-# Reultados 
+# Resultados 
 Após os testes com ambos os modelos, os seguintes resultados foram obtidos:
-  <img width="736" height="93" alt="image" src="https://github.com/user-attachments/assets/c4d3976f-5cc8-433f-b03d-f19f21660fad" />
+- <img width="736" height="93" alt="image" src="https://github.com/user-attachments/assets/c4d3976f-5cc8-433f-b03d-f19f21660fad" />
 
 # Referências
 Baumbach, L., Schmidt, C., & Michalik, A. (2019). Big data and citizen science—An integration towards data-driven sustainable development. Sustainability, 11(4), 956. https://doi.org/10.3390/su11040956.
